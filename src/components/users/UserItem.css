@@ -1,0 +1,35 @@
+.UserItem {
+    /* width: 20vw;
+    height: 40vh; */
+    margin-bottom: 40px;
+    background-color: #fff;
+    box-shadow: -1px 4px 20px -6px rgb(0, 0, 0);
+    
+}
+
+.UserItemRow {
+    display: flex;
+    flex-direction: column;
+}
+
+.UserItemCol1 {
+    flex: 0.6;
+}
+
+.UserItemCol2 {
+    flex: 0.4;
+}
+
+.UsersDiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+}
+
+@media (max-width: 530px) {
+    .UsersDiv {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 16px;
+    }
+}
